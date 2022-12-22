@@ -63,3 +63,50 @@ a{
     color: tomato;
  }
 */
+/* глобальний */
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* навігація */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
+.span-logo {
+  color: #4d5ae5;
+}
+.menu-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+.menu-link:focus,
+.menu-link:hover {
+  color: #4d5ae5;
+}
+/* контакти */
+.contact {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+}
+.contact:focus,
+.contact:hover {
+  color: #4d5ae5;
+}
