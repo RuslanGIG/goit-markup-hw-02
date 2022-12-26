@@ -1,112 +1,107 @@
-/*універсальні стилі
-селектор єлементу (тегу)
-селектор id
-селектор класу
-селектор атрибуду
-селектор нащадка
-дочірній селектор
-селектор сусіда*/
-
-/* універсальний селектор */
-/* 
-
-*{
-      margin: 0;
-} 
-*/
-
-/* 
-h1{
-    color:pink;
+:root {
+  --NAVY-BLUE: #2e2f42;
+  --IRIS-color: #4d5ae5;
 }
 
-p{
-    color: red;
-}
+/* основной текст NAVY BLUE  color: #2E2F42*/
+/* заголовок секции герой color: #FFFFFF; */
+/* вторичный текст SLATE color: #434455; */
+/* текст футер логотипа CLOUD  IRIS color: #4D5AE5; color: #F4F4FD; */
+/* текст футер CORNFLOWER color: #E7E9FC; */
+/* твет акцент IRIS color: #4D5AE5; */
+/* цвет фона темный NAVY BLUE background: #2E2F42;*/
+/* цвет фона светлый background: #F4F4FD; */
+/* цвет фона белый background: #FFFFFF; */
 
-a{
-    color: blueviolet;
-}
+/* глобальные */
 
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-} 
-*/
-
-/* селектор id */
-
-/*
- #description{
-    color: azure;
-} 
-*/
-
-/* селектор класу */
-
-/* 
-.text{
-    color: tomato;
-}
- */
-
-/* селектор атрибуту */
-/* 
- [href]{
-    color: tomato;
- }
-
- [href="link"]{
-    color: tomato;
- }
-*/
-/* глобальний */
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.33;
-  letter-spacing: 0.02em;
-  color: #434455;
-}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--NAVY-BLUE);
 }
-/* навігація */
+
+body {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--NAVY-BLUE);
+  background-color: #ffffff;
+}
+
+/* логотип*/
+
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1, 3;
+  display: flex;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--NAVY-BLUE);
 }
 .span-logo {
-  color: #4d5ae5;
+  color: var(--IRIS-color);
 }
-.menu-link {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #2e2f42;
+
+.logo:hover,
+.logo:focus {
+  color: var(--IRIS-color);
 }
-.menu-link:focus,
-.menu-link:hover {
-  color: #4d5ae5;
+
+/* навигация */
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--IRIS-color);
 }
-/* контакти */
+
+/* контакты */
+
 .contact {
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 400;
   color: #434455;
 }
-.contact:focus,
-.contact:hover {
-  color: #4d5ae5;
+.contact:hover,
+.contact:focus {
+  color: var(--IRIS-color);
+}
+
+/* section hero*/
+
+.hero-text {
+  font-size: 56px;
+  line-height: 1.1;
+  text-align: center;
+  color: #ffffff;
+}
+
+.section-hero {
+  background-color: var(--NAVY-BLUE);
+}
+
+.modal-button {
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  background: var(--IRIS-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: #404bbf;
 }
